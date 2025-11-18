@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "123",
+      "email": "admin@example.com"
+    },
+    {
+      "username": "shresth",
+      "email": "sresth.kvalld123@gmail.com",
+      "password": "$2b$10$Mv1M5WqBe1bZFLcMKzyPoeaXyW5yRYIXTSsaZnt.CRVhgHIbZTGEy"
+    }
+  ],
+  "transactions": [
+    {
+      "_id": "1763444485440",
+      "email": "admin@example.com",
+      "amount": 12000,
+      "type": "expense",
+      "category": "Business",
+      "status": "Completed",
+      "date": "2025-11-18T05:41:25.440Z"
+    },
+    {
+      "_id": "1763447790063",
+      "email": "admin@example.com",
+      "amount": 20000,
+      "type": "income",
+      "category": "Business",
+      "status": "Completed",
+      "date": "2025-11-18T06:36:30.063Z"
+    },
+    {
+      "_id": "1763455050778",
+      "email": "sresth.kvalld123@gmail.com",
+      "amount": 1000,
+      "type": "income",
+      "category": "Salary",
+      "status": "Completed",
+      "date": "2025-11-18T08:37:30.779Z"
+    },
+    {
+      "_id": "1763455063534",
+      "email": "sresth.kvalld123@gmail.com",
+      "amount": 200,
+      "type": "expense",
+      "category": "Travel",
+      "status": "Completed",
+      "date": "2025-11-18T08:37:43.534Z"
+    }
+  ]
+}
