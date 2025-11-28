@@ -85,26 +85,26 @@
 </section>
 
 <script>
-// dashboard.js
+
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user) {
   alert("Please login first!");
   window.location.href = "login.html";
 }
 
-// DOM Elements
+
 const recordTable = document.getElementById("recordTable");
 const totalIncomeEl = document.getElementById("totalIncome");
 const totalExpenseEl = document.getElementById("totalExpense");
 const balanceEl = document.getElementById("balance");
 
-// Logout
+
 document.getElementById("logoutBtn").onclick = () => {
   localStorage.removeItem("user");
   window.location.href = "login.html";
 };
 
-// Load all transactions
+
 async function loadTransactions() {
   try {
     const res = await fetch("http://localhost:5000/get-transactions", {
@@ -153,7 +153,6 @@ async function loadTransactions() {
   }
 }
 
-// Add Transaction
 document.getElementById("transactionForm").onsubmit = async (e) => {
   e.preventDefault();
 
@@ -182,7 +181,6 @@ document.getElementById("transactionForm").onsubmit = async (e) => {
   }
 };
 
-// Delete Transaction
 async function deleteTransaction(id) {
   if (!confirm("Delete this transaction?")) return;
 
@@ -197,7 +195,7 @@ async function deleteTransaction(id) {
   else alert("Delete failed");
 }
 
-// Load on start
+
 loadTransactions();
 
 </script>
