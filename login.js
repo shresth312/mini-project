@@ -1,4 +1,4 @@
-// login.js
+
 const loginBtn = document.getElementById("btn");
 const usernameInput = document.getElementById("inp");
 const passwordInput = document.getElementById("pass");
@@ -24,10 +24,10 @@ loginBtn.addEventListener("click", async (e) => {
     const data = await res.json();
 
     if (data.success) {
-      // Save user to localStorage
+      
       localStorage.setItem("user", JSON.stringify(data.user));
       alert("Login Successful!");
-      window.location.href = "index.html"; // Go to dashboard
+      window.location.href = "index.html"; 
     } else {
       alert(data.message || "Login failed");
     }
