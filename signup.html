@@ -271,7 +271,7 @@
             <input type="submit" value="Sign Up" />
           </div>
           <div class="links">
-            <a href="http://127.0.0.1:5000/login.html#">Already have an account? Login</a>
+            <a href="login.html">Already have an account? Login</a>
           </div>
         </form>
       </div>
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/signup", { 
+      const res = await fetch("/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password })
